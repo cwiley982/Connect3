@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/grid"/>
+
+    <ImageView
+        android:id="@+id/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/green_piece_small"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/blue_piece_small" />
+
+    <ImageView
+        android:id="@+id/square1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="place"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="switchTurn"
+        android:src="@drawable/blue_piece"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/square2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="place"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:onClick="switchTurn"
+        android:src="@drawable/blue_piece"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/square3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="place"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:onClick="switchTurn"
+        android:src="@drawable/blue_piece"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/square4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="place"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:onClick="switchTurn"
+        android:src="@drawable/blue_piece"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/square5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="place"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="switchTurn"
+        android:src="@drawable/blue_piece"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/square6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="place"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:onClick="switchTurn"
+        android:src="@drawable/blue_piece"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/square7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="place"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="switchTurn"
+        android:src="@drawable/blue_piece"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/square8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="place"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:onClick="switchTurn"
+        android:src="@drawable/blue_piece"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/square9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="place"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="15dp"
+        android:onClick="switchTurn"
+        android:src="@drawable/blue_piece"
+        android:alpha="0" />
+
+    <android.widget.RelativeLayout
+        android:id="@+id/gameOverDialog"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/gameOverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="10dp"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/playAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gameOverText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="Play again"
+            android:onClick="resetGame"/>
+
+    </android.widget.RelativeLayout>
+
+</android.widget.RelativeLayout>
